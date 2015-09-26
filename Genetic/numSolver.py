@@ -123,7 +123,7 @@ class Solution(object):
         if (target == score):
             return float("inf")
         else:
-            return 1.0 / (target - score)
+            return 1.0 / abs(target - score)
 
     def mutate(self):
         for i in range(0, CHROMOSOME_BITS):
